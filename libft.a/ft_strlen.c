@@ -10,12 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *f)
-{
-	int	i;
-
-	i = 0;
-	while (f[i] != '\0')
-		i++;
-	return (i);
+/*
+ * DESCRIPTION
+ *     The strlen() function calculates the length of the string s, excluding
+ *     the terminating null byte ('\0').
+ */
+size_t strlen(const char *s) {
+	size_t len = 0;
+    while (*s++ != '\0') {
+        len++;
+    }
+    return len;
 }
