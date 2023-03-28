@@ -10,9 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
-{
-	if ((c < 95 && c > 64) || (c < 123 && c > 96))
-		return (1);
-	return (0);
+/*
+ * DESCRIPTION
+ *     The isalpha() function tests whether a character is an alphabetic letter,
+ *     i.e., a letter of the alphabet in any case.
+ *
+ * RETURN VALUES
+ *     The isalpha() function returns zero if the character tests false and
+ *     returns non-zero if the character tests true.
+ */
+int isalpha(int c) {
+    return (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z');
 }
