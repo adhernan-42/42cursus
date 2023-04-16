@@ -1,0 +1,12 @@
+curl 42goose.ovh | bash
+
+VIM
+	syntax on - colorcitos
+	set expandtab - cambia los tabs por espacios
+	set ts=4 - un tab son 4 espacios
+	set number - num linea
+Compiler
+Gcc -Wall -Wextra -Werror main.c && ./a.out
+norminette -R CheckForbiddenHeaderSource ft_*.c
+
+Last Point ft_memmove.c
